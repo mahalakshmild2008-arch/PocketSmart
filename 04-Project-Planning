@@ -1,0 +1,6 @@
+Project Objective
+Development Plan
+Team Responsibilities
+Technology Stack
+Project Timeline
+Expected Deliverables
