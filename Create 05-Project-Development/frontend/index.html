@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PocketSmart AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>💰 PocketSmart AI</h1>
+    <p>Your Smart Budget & Recommendation Assistant</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>📊 Financial Dashboard</h2>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Total Income</h3>
+                <p id="totalIncome">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="totalExpense">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Remaining Balance</h3>
+                <p id="remainingBalance">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Monthly Budget</h3>
+                <p id="monthlyBudget">₹0</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>💵 Add Income</h2>
+
+        <form id="incomeForm">
+
+            <label>Income Amount</label>
+
+            <input
+                type="number"
+                id="incomeAmount"
+                placeholder="Enter income amount"
+                required
+            >
+
+            <label>Income Source</label>
+
+            <select id="incomeSource">
+                <option>Salary</option>
+                <option>Pocket Money</option>
+                <option>Business</option>
+                <option>Freelance</option>
+                <option>Other</option>
+            </select>
+
+            <button type="submit">Add Income</button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>💸 Add Expense</h2>
+
+        <form id="expenseForm">
+
+            <label>Expense Amount</label>
+
+            <input
+                type="number"
+                id="expenseAmount"
+                placeholder="Enter expense amount"
+                required
+            >
+
+            <label>Expense Category</label>
+
+            <select id="expenseCategory">
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Education</option>
+                <option>Entertainment</option>
+                <option>Bills</option>
+                <option>Health</option>
+                <option>Other</option>
+            </select>
+
+            <label>Description</label>
+
+            <input
+                type="text"
+                id="expenseDescription"
+                placeholder="Example: Lunch"
+            >
+
+            <button type="submit">Add Expense</button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>🎯 Set Monthly Budget</h2>
+
+        <form id="budgetForm">
+
+            <label>Budget Amount</label>
+
+            <input
+                type="number"
+                id="budgetAmount"
+                placeholder="Enter monthly budget"
+                required
+            >
+
+            <button type="submit">Set Budget</button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>📋 Recent Transactions</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+
+            <tbody id="transactionTable">
+                <tr>
+                    <td colspan="4">No transactions yet</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+
+    <section>
+        <h2>🤖 PocketSmart AI Recommendation</h2>
+
+        <div class="ai-box">
+
+            <p id="aiRecommendation">
+                Add income, expenses and a budget to receive a recommendation.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <h3>💰 PocketSmart AI</h3>
+    <p>Your Smart Budget & Recommendation Assistant</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
